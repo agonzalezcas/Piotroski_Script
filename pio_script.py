@@ -232,4 +232,27 @@ for i in range(0,len(name_1)):
 	else:
 		score.append(-10)
 	print score[i], name_1[i]
+alist = [
+name_1,
+symbol_1,
+ti_1,
+sales_1,
+iffs_1,
+eoi_1,
+te_1,
+cogs_1,
+pat_1,
+borow_1,
+curr_lia_1,
+tot_assets_1,
+curr_assets_1,
+net_cash_flow_1,
+pb_1,
+price_1
+]
+alist = map(list ,zip(*alist))
+slist= sorted(alist,key =lambda x : x[14])
+blist = map(list ,zip(*slist))
+
+print blist[0]
 		# assign score to neg
