@@ -100,6 +100,10 @@ for i in range(0,len(name)):
 		sales[i] = 0
 	sales[i]=float(sales[i])
 
+	if ti[i] == '' or ti[i] == 'NA':
+		ti[i] = 0
+	ti[i]=float(ti[i])
+
 	if iffs[i] == '' or iffs[i] == 'NA':
 		iffs[i] = 0
 	iffs[i]=float(iffs[i])
@@ -144,7 +148,7 @@ for i in range(0,len(name)):
 		pb[i] = 0
 	pb[i]=float(pb[i])
 
-	if price[i] == '' or price[i] == 'NA' or price[i]=='\n':
+	if price[i] == '' or price[i] == 'NA' or price[i]=='\n'or price[i]=='NA\n':
 		price[i] = 0
 	price[i]=float(price[i])
 
@@ -153,6 +157,10 @@ for i in range(0,len(name_1)):
 	if sales_1[i] == '' or sales_1[i] == 'NA':
 		sales_1[i] = 0
 	sales_1[i]=float(sales_1[i])
+
+	if ti_1[i] == '' or ti_1[i] == 'NA':
+		ti_1[i] = 0
+	ti_1[i]=float(ti_1[i])
 
 	if iffs_1[i] == '' or iffs_1[i] == 'NA':
 		iffs_1[i] = 0
@@ -198,7 +206,7 @@ for i in range(0,len(name_1)):
 		pb_1[i] = 0
 	pb_1[i]=float(pb_1[i])
 
-	if price_1[i] == '' or price_1[i] == 'NA' or price_1[i]=='\n':
+	if price_1[i] == '' or price_1[i] == 'NA' or price_1[i]=='\n' or price_1[i]=='NA\n':
 		price_1[i] = 0
 	price_1[i]=float(price_1[i])
 
@@ -219,8 +227,9 @@ for i in range(0,len(name_1)):
 			score[i]+=1 if ( iffs_1[i]/tot_assets_1[i] ) >( iffs[index]/tot_assets[index] ) else 0
 		else:
 			score[i]+=1 if ( (sales_1[i]-cogs_1[i])/sales_1[i] ) >( (sales[index]-cogs[index])/sales[index] ) else 0
-			score[i]+=1 if ( sales_1[i]/tot_assets_1[i] ) >( saless[index]/tot_assets[index] ) else 0
+			score[i]+=1 if ( sales_1[i]/tot_assets_1[i] ) >( sales[index]/tot_assets[index] ) else 0
 
 	else:
 		score.append(-10)
+	print score[i], name_1[i]
 		# assign score to neg
