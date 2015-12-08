@@ -93,7 +93,7 @@ for line in lines:
 		price_1.append(row[15])
 
 # print int(sales[3])-int(sales[2])
-# print float(sales[3])
+print float(sales[3])
 
 # for 
 
