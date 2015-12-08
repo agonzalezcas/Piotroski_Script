@@ -248,11 +248,31 @@ tot_assets_1,
 curr_assets_1,
 net_cash_flow_1,
 pb_1,
-price_1
+price_1,
+score
 ]
 alist = map(list ,zip(*alist))
 slist= sorted(alist,key =lambda x : x[14])
-blist = map(list ,zip(*slist))
+print slist[1][16]<=0, slist[1][15]<=0.0, slist[1][14]<=0.0
+# print slist
+remove_this =[]
+for lis in slist:
+	if lis[16] <=0 or lis[14]<=0.0 or lis[15]<=0.0 or 1<0:
+		remove_this.append(lis)
+		# slist.remove(lis)
+for lst in remove_this:
+	slist.remove(lst)
+# print slist
+half_list =[i for j,i in enumerate(slist) if j in range(0, len(slist)/2)]
+# print half_list
+# half_list = map(list,zip(*half_list))
+slist= sorted(half_list,key =lambda x : x[16])
+# slist = map(list,zip(*slist))
+bottom_decile =[i for j,i in enumerate(slist) if j in range(0, len(slist)/10)]
+top_decile =[i for j,i in enumerate(slist) if j not in range(0, 9*len(slist)/10)]
 
-print blist[0]
+print top_decile ,"\n"
+print bottom_decile
+# 
+# print blist[0]
 		# assign score to neg
