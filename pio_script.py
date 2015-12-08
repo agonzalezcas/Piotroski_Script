@@ -216,14 +216,14 @@ for i in range(0,len(name_1)):
 	if symbol_1[i] in symbol:
 		index=symbol.index(symbol_1[i])
 		score.append(0)
-		score[i]+=1 if ( (ti_1[i]-eoi_1[i])/tot_assets_1[i] ) >0 else 0
-		score[i]+=1 if ( (ti_1[i]-eoi_1[i])/tot_assets_1[i] ) - ( (ti[index]-eoi[index])/tot_assets[index] ) >0 else 0
-		score[i]+=1 if ( net_cash_flow_1[i]/tot_assets_1[i] ) >0 else 0
-		score[i]+=1 if ( net_cash_flow_1[i]/tot_assets_1[i] > (ti_1[i]-eoi_1[i])/tot_assets_1[i] )  else 0
-		score[i]+=1 if ( curr_assets_1[i]/curr_lia_1[i] ) >  ( curr_assets[index]/curr_lia[index] ) else 0
-		score[i]+=1 if ( borow_1[i]/tot_assets_1[i] ) > ( borow[index]/tot_assets[index] ) else 0
-		if sales_1[i] == 0 :
-			score[i]+=1 if ( (iffs_1[i]-te_1[i])/iffs_1[i] ) >( (iffs[index]-te[index])/iffs[index] ) else 0
+		score[i]+=1 if ( (ti_1[i]-eoi_1[i])/tot_assets_1[i] ) >0 else 0 #ROA
+		score[i]+=1 if ( (ti_1[i]-eoi_1[i])/tot_assets_1[i] ) > ( (ti[index]-eoi[index])/tot_assets[index] )  else 0 #D_ROA
+		score[i]+=1 if ( net_cash_flow_1[i]/tot_assets_1[i] ) >0 else 0 #CFO
+		score[i]+=1 if ( net_cash_flow_1[i]/tot_assets_1[i] > (ti_1[i]-eoi_1[i])/tot_assets_1[i] )  else 0 #ACCRUAL
+		score[i]+=1 if ( curr_assets_1[i]/curr_lia_1[i] ) >  ( curr_assets[index]/curr_lia[index] ) else 0 #D_LIQUID
+		score[i]+=1 if ( borow_1[i]/tot_assets_1[i] ) < ( borow[index]/tot_assets[index] ) else 0 #D_LEVER
+		if sales_1[i] == 0 :#D_MARGIN AND D_TURNOVER
+			score[i]+=1 if ( (iffs_1[i]-te_1[i])/iffs_1[i] ) >( (iffs[index]-te[index])/iffs[index] ) else 0 
 			score[i]+=1 if ( iffs_1[i]/tot_assets_1[i] ) >( iffs[index]/tot_assets[index] ) else 0
 		else:
 			score[i]+=1 if ( (sales_1[i]-cogs_1[i])/sales_1[i] ) >( (sales[index]-cogs[index])/sales[index] ) else 0
