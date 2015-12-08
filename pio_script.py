@@ -48,7 +48,6 @@ for line in lines:
 		pb.append(row[14])
 		price.append(row[15])
 
-print name[0]
 
 name_1=[]
 symbol_1=[]
@@ -66,6 +65,7 @@ curr_assets_1=[]
 net_cash_flow_1=[]
 pb_1=[]
 price_1=[]
+
 #reading the second file
 with open(sys.argv[2]) as f:
 	lines = f.readlines()
@@ -92,10 +92,11 @@ for line in lines:
 		pb_1.append(row[14])
 		price_1.append(row[15])
 
-# print int(sales[3])-int(sales[2])
-print float(sales[3])
-
-# for 
+print name[10],name_1[10],eoi[10],eoi_1[10]
+# converting spaces and NA to zero 
+for i in range(0,len(name)):
+	if sales[i] == '' || sales[i] == 'NA':
+		sales[i] = 0
 
 
 
