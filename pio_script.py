@@ -269,7 +269,13 @@ half_list =[i for j,i in enumerate(slist) if j in range(0, len(slist)/2)]
 slist= sorted(half_list,key =lambda x : x[16])
 # slist = map(list,zip(*slist))
 bottom_decile =[i for j,i in enumerate(slist) if j in range(0, len(slist)/10)]
-top_decile =[i for j,i in enumerate(slist) if j not in range(0, 9*len(slist)/10)]
+top_decile =[i for j,i in enumerate(slist) if j in range( 9*len(slist)/10, len(slist))]
+top_decile = map(list,zip(*top_decile))
+top_decile = [top_decile[0],top_decile[1],top_decile[15]]
+top_decile = map(list,zip(*top_decile))
+bottom_decile = map(list,zip(*bottom_decile))
+bottom_decile = [bottom_decile[0],bottom_decile[1],bottom_decile[15]]
+bottom_decile = map(list,zip(*bottom_decile))
 
 print top_decile ,"\n"
 print bottom_decile
