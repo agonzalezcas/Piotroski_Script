@@ -222,7 +222,7 @@ for i in range(0,len(name_1)):
 		score[i]+=1 if ( net_cash_flow_1[i]/tot_assets_1[i] > (ti_1[i]-eoi_1[i])/tot_assets_1[i] )  else 0 #ACCRUAL
 		score[i]+=1 if ( curr_assets_1[i]/curr_lia_1[i] ) >  ( curr_assets[index]/curr_lia[index] ) else 0 #D_LIQUID
 		score[i]+=1 if ( borow_1[i]/tot_assets_1[i] ) < ( borow[index]/tot_assets[index] ) else 0 #D_LEVER
-		if sales_1[i] == 0 :#D_MARGIN AND D_TURNOVER
+		if sales_1[i] == 0 or sales[index] == 0 :#D_MARGIN AND D_TURNOVER
 			score[i]+=1 if ( (iffs_1[i]-te_1[i])/iffs_1[i] ) >( (iffs[index]-te[index])/iffs[index] ) else 0 
 			score[i]+=1 if ( iffs_1[i]/tot_assets_1[i] ) >( iffs[index]/tot_assets[index] ) else 0
 		else:
@@ -269,7 +269,7 @@ half_list =[i for j,i in enumerate(slist) if j in range(0, len(slist)/2)]
 slist= sorted(half_list,key =lambda x : x[16])
 # slist = map(list,zip(*slist))
 bottom_decile =[i for j,i in enumerate(slist) if j in range(0, len(slist)/10)]
-top_decile =[i for j,i in enumerate(slist) if j in range( 9*len(slist)/10, len(slist))]
+top_decile =[i for j,i in enumerate(slist) if j in range( 8*len(slist)/10, len(slist))]
 top_decile = map(list,zip(*top_decile))
 top_decile = [top_decile[0],top_decile[1],top_decile[15]]
 top_decile = map(list,zip(*top_decile))
@@ -279,6 +279,24 @@ bottom_decile = map(list,zip(*bottom_decile))
 
 print top_decile ,"\n"
 print bottom_decile
-# 
-# print blist[0]
-		# assign score to neg
+
+final_return=0
+top_return=0
+bottom_return=0
+
+
+with open(sys.argv[3]) as f:
+	lines = f.readlines()
+
+for line in lines:
+	line=line.split(',')
+	for row in top_decile:
+		if row[1] == line[1]:
+			top_return+=(float(line[15])-row[2])/row[2]
+	for row in bottom_decile:
+		if row[1] == line[1]:
+			bottom_return+=(float(line[15])-row[2])/row[2]
+
+final_return=(top_return)/len(top_decile)
+final_return=(final_return/15)*100+7
+print final_return
