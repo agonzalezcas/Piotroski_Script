@@ -297,6 +297,6 @@ for line in lines:
 		if row[1] == line[1]:
 			bottom_return+=(float(line[15])-row[2])/row[2]
 
-final_return=(top_return)/len(top_decile)
+final_return=(top_return-bottom_return)/len(top_decile)
 final_return=(final_return/15)*100+7
 print final_return
