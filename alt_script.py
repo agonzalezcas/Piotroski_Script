@@ -28,8 +28,8 @@ companies_for_removal =[]
 for company in data:
 	try:
 		score =0
-		score+=1 if ( (company[14]-company[17])/company[22] ) >0 else 0 #ROA
-		score+=1 if ( (company[14]-company[17])/company[22] ) > ( (company[2]-company[5])/company[10] )  else 0 #D_ROA
+		score+=1 if ( (company[14]-company[17]-company[18])/company[22] ) >0 else 0 #ROA
+		score+=1 if ( (company[14]-company[17])-company[18]/company[22] ) > ( (company[2]-company[5])-company[6]/company[10] )  else 0 #D_ROA
 		score+=1 if ( company[24]/company[22] ) >0 else 0 #CFO
 		score+=1 if ( company[24]/company[22] > ( company[14]-company[17])/company[22])  else 0 #ACCRUAL
 		score+=1 if ( company[23]/company[21] ) >  ( company[11]/company[9] ) else 0 #D_LIQUID
@@ -73,5 +73,5 @@ for company in bottom_decile:
 	returnb+= (company[26]-company[27])/company[26]
 returnb = returnb/len(bottom_decile)
 returns = returnt + returnb
-returns =  (returns*100/15) + 7
+returns =  (returns*100/15) #+ 7 #bond rate
 print returns
