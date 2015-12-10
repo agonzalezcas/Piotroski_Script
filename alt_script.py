@@ -10,6 +10,19 @@ datafile = open(sys.argv[1],'r')
 # datafile = open("2006d.csv",'r') for example
 datareader = csv.reader(datafile, delimiter =",")
 data = list(datareader)
+useful_info = data[3:5]
+useful_info[0][0:2] = ['00','00']
+useful_info[0] = [int(x[-3:]) for x in useful_info[0] ]
+set_list = list(set(useful_info[0]))
+set_list.sort()
+print len(set_list)
+set_list_indexing = ['n','p','c','f']
+set_list_dict = {set_list[i]:set_list_indexing[i] for i in xrange(4)}
+for i in xrange(len(useful_info[1])):
+	useful_info[1][i] = set_list_dict[useful_info[0][i]]+useful_info[1][i]
+idx= {useful_info[1][i] : i for i in xrange(len(useful_info[1]))}
+ 
+print useful_info[1]
 del data[0:5]
 for i in xrange(0,len(data)):
 	for j in xrange(2,len(data[i])):
@@ -64,6 +77,9 @@ bottom_decile =[i for j,i in enumerate(fsorted_data) if j in range(0, 1 + len(fs
 # bottom_decile = transpose(bottom_decile)
 top_decile =[i for j,i in enumerate(fsorted_data) if j in range(9*len(fsorted_data)/10, len(fsorted_data))]
 # top_decile = transpose(top_decile)
+# with open("portfolio.txt", "a") as myfile:
+# 	write(sys.) 
+	
 returnt = 0
 returnb = 0
 for company in top_decile:
