@@ -64,10 +64,14 @@ bottom_decile =[i for j,i in enumerate(fsorted_data) if j in range(0, 1 + len(fs
 # bottom_decile = transpose(bottom_decile)
 top_decile =[i for j,i in enumerate(fsorted_data) if j in range(9*len(fsorted_data)/10, len(fsorted_data))]
 # top_decile = transpose(top_decile)
-returns = 0
+returnt = 0
+returnb = 0
 for company in top_decile:
-	returns+= (company[27]-company[26])/company[26]
+	returnt+= (company[27]-company[26])/company[26]
+returnt = returnt/len(top_decile)
 for company in bottom_decile:
-	returns+= (company[26]-company[27])/company[26]
-returns =  (returns*15/100) + 7
+	returnb+= (company[26]-company[27])/company[26]
+returnb = returnb/len(bottom_decile)
+returns = returnt + returnb
+returns =  (returns*100/15) + 7
 print returns
