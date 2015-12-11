@@ -1,0 +1,224 @@
+2005
+long on
+Escorts Ltd.  1.41  6
+Reliance Capital Ltd.  1.58  6
+Aditya Birla Nuvo Ltd.  1.78  6
+Kochi Refineries Ltd. [Merged]  0.84  7
+Neyveli Lignite Corpn. Ltd.  1.44  7
+Chennai Petroleum Corpn. Ltd.  1.71  7
+
+short on
+Essar Oil Ltd.  1.39  2
+Punjab National Bank  1.58  2
+Indian Overseas Bank  1.7  2
+Andhra Bank  2.35  2
+Mahanagar Telephone Nigam Ltd.  0.66  3
+
+
+2006
+long on
+Escorts Ltd.  1.68  6
+Tata Chemicals Ltd.  2.62  6
+I D F C Ltd.  2.94  6
+Tata Power Co. Ltd.  2.07  7
+I C I C I Bank Ltd.  2.36  7
+Reliance Industries Ltd.  2.45  7
+
+short on
+Hindustan Petroleum Corpn. Ltd.  1.24  2
+Indian Overseas Bank  1.73  2
+Essar Oil Ltd.  1.76  2
+Sun T V Network Ltd.  0.0  3
+Federal Bank Ltd.  1.39  3
+
+
+2007
+long on
+G A I L (India) Ltd.  1.96  6
+Birla Corporation Ltd.  2.23  6
+Tata Global Beverages Ltd.  2.36  6
+Dr. Reddy'S Laboratories Ltd.  2.8  6
+Hotel Leelaventure Ltd.  3.02  6
+Andhra Bank  1.17  7
+Jaiprakash Power Ventures Ltd.  1.54  7
+Steel Authority Of India Ltd.  2.73  7
+Polaris Consulting & Services Ltd.  3.12  7
+
+short on
+G T L Ltd.  1.27  2
+Bajaj Hindusthan Sugar Ltd.  1.68  2
+Hindustan Construction Co. Ltd.  2.54  2
+Oswal Greentech Ltd.  0.52  3
+Arvind Ltd.  0.69  3
+Mahanagar Telephone Nigam Ltd.  0.79  3
+Dena Bank  0.81  3
+Hindustan Petroleum Corpn. Ltd.  0.88  3
+
+
+2008
+long on
+Power Finance Corpn. Ltd.  1.99  6
+Brigade Enterprises Ltd.  2.04  6
+State Bank Of India  2.06  6
+Rajesh Exports Ltd.  2.19  6
+Lakshmi Machine Works Ltd.  2.63  6
+Bata India Ltd.  2.72  6
+S Kumars Nationwide Ltd.  2.73  6
+Oracle Financial Services Software Ltd.  2.8  6
+Syndicate Bank  1.01  7
+Sterlite Technologies Ltd.  1.95  7
+K P I T Technologies Ltd.  2.24  7
+
+short on
+Bajaj Hindusthan Sugar Ltd.  1.09  1
+Gujarat Alkalies & Chemicals Ltd.  1.02  2
+Ansal Housing & Construction Ltd.  1.28  2
+Jet Airways (India) Ltd.  2.6  2
+T V S Motor Co. Ltd.  1.01  3
+Gitanjali Gems Ltd.  1.05  3
+Jindal Stainless Ltd.  1.22  3
+Moser Baer India Ltd.  1.3  3
+Hindustan Oil Exploration Co. Ltd.  1.35  3
+Wockhardt Ltd.  1.76  3
+
+
+2009
+long on
+Punjab National Bank  0.99  6
+Reliance Infrastructure Ltd.  1.11  6
+Bharat Petroleum Corpn. Ltd.  1.12  6
+Noida Toll Bridge Co. Ltd.  1.13  6
+Sterling Biotech Ltd.  1.15  6
+Reliance Capital Ltd.  1.28  6
+Bajaj Hindusthan Sugar Ltd.  1.43  6
+I D B I Bank Ltd.  0.44  7
+Aurobindo Pharma Ltd.  0.77  7
+
+short on
+J S W Ispat Steel Ltd. [Merged]  -9.78  2
+Kingfisher Airlines Ltd.  -0.4  2
+Housing Development & Infrastructure Ltd.  0.5  2
+C E S C Ltd.  0.78  2
+Orchid Chemicals & Pharmaceuticals Ltd.  0.81  2
+Suzlon Energy Ltd.  0.98  2
+Rolta India Ltd.  1.25  2
+Dish T V India Ltd.  -3.8  3
+
+
+2010
+long on
+Ruchi Soya Inds. Ltd.  1.36  6
+Noida Toll Bridge Co. Ltd.  1.45  6
+Sobha Ltd.  1.58  6
+Reliance Infrastructure Ltd.  1.74  6
+Welspun Corp Ltd.  2.03  6
+Neyveli Lignite Corpn. Ltd.  2.36  6
+L I C Housing Finance Ltd.  2.44  6
+J S W Steel Ltd.  2.47  6
+Tulip Telecom Ltd.  2.63  6
+Bhushan Steel Ltd.  1.8  7
+
+short on
+Mahanagar Telephone Nigam Ltd.  0.49  2
+Suzlon Energy Ltd.  2.0  2
+Hindustan Construction Co. Ltd.  2.68  2
+Tata Teleservices (Maharashtra) Ltd.  -6.73  3
+J S W Ispat Steel Ltd. [Merged]  -5.42  3
+Kingfisher Airlines Ltd.  -0.31  3
+Moser Baer India Ltd.  0.73  3
+Vijaya Bank  0.77  3
+Bajaj Hindusthan Sugar Ltd.  0.81  3
+
+
+2011
+long on
+Aditya Birla Nuvo Ltd.  1.71  6
+Mangalore Refinery & Petrochemicals Ltd.  1.73  6
+Onmobile Global Ltd.  1.75  6
+Tata Chemicals Ltd.  1.84  6
+Polaris Consulting & Services Ltd.  2.04  6
+N H P C Ltd.  1.27  7
+Everest Kanto Cylinder Ltd.  1.59  7
+Power Finance Corpn. Ltd.  1.83  7
+I I F L Holdings Ltd.  1.95  7
+Oil India Ltd.  2.02  7
+Neyveli Lignite Corpn. Ltd.  1.56  8
+
+short on
+Balrampur Chini Mills Ltd.  1.39  0
+Patel Engineering Ltd.  0.73  1
+Kingfisher Airlines Ltd.  -0.57  2
+Moser Baer India Ltd.  0.54  2
+Firstsource Solutions Ltd.  0.84  2
+Mercator Ltd.  0.93  2
+Uniphos Enterprises Ltd.  1.28  2
+Hindustan Construction Co. Ltd.  1.45  2
+Bharat Petroleum Corpn. Ltd.  1.57  2
+Tata Teleservices (Maharashtra) Ltd.  -5.26  3
+
+
+2012
+long on
+Canara Bank  1.02  6
+Indian Bank  1.14  6
+Bank Of Baroda  1.24  6
+Financial Technologies (India) Ltd.  1.31  6
+Ruchi Soya Inds. Ltd.  1.39  6
+I I F L Holdings Ltd.  1.51  6
+Reliance Industries Ltd.  1.51  6
+M R F Ltd.  1.52  6
+I D F C Ltd.  1.68  6
+Punjab National Bank  1.19  7
+Oriental Bank Of Commerce  0.66  8
+
+short on
+Shipping Corpn. Of India Ltd.  0.43  1
+Shree Renuka Sugars Ltd.  1.19  1
+Mahanagar Telephone Nigam Ltd.  0.68  2
+Uniphos Enterprises Ltd.  1.08  2
+Balrampur Chini Mills Ltd.  1.15  2
+Indian Hotels Co. Ltd.  1.49  2
+Housing Development & Infrastructure Ltd.  0.36  3
+Reliance Communications Ltd.  0.39  3
+N C C Ltd.  0.6  3
+I V R C L Ltd.  0.62  3
+
+
+2013
+long on
+P T C India Ltd.  0.76  6
+Bank Of India  0.79  6
+N H P C Ltd.  0.88  6
+Aurobindo Pharma Ltd.  1.45  6
+Tata Chemicals Ltd.  1.54  6
+I F C I Ltd.  0.79  7
+J S W Energy Ltd.  1.32  7
+
+short on
+C E S C Ltd.  0.61  2
+Steel Authority Of India Ltd.  0.63  2
+Reliance Capital Ltd.  0.67  2
+Syndicate Bank  0.69  2
+Shree Renuka Sugars Ltd.  0.83  2
+Opto Circuits (India) Ltd.  1.0  2
+
+
+2014
+long on
+Reliance Infrastructure Ltd.  0.56  6
+Hindustan Petroleum Corpn. Ltd.  0.7  6
+P T C India Ltd.  0.8  6
+J S W Steel Ltd.  1.07  6
+J S W Energy Ltd.  1.39  6
+Axis Bank Ltd.  1.8  6
+I C I C I Bank Ltd.  1.96  6
+
+short on
+India Cements Ltd.  0.54  2
+Reliance Communications Ltd.  0.84  2
+Indian Oil Corpn. Ltd.  1.04  2
+Jain Irrigation Systems Ltd.  1.23  2
+Reliance Industries Ltd.  1.53  2
+I R B Infrastructure Developers Ltd.  1.99  2
+
+
