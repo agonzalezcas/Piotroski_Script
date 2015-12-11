@@ -15,16 +15,17 @@ useful_info = data[3:5]
 
 for i in xrange(len(useful_info[0])):
 	try:
-		useful_info[0][i] = int(useful_info[0][i][-3:])
+		useful_info[0][i] = int(useful_info[0][i][-2:])
 	except:
 		useful_info[0][i] = 0
 
 set_list = list(set(useful_info[0]))
 set_list.sort()
-set_list_indexing = ['n','p','c','f']
-set_list_dict = {set_list[i]:set_list_indexing[i] for i in xrange(4)}
+set_list_indexing = ['n','h','p','c','f']
+set_list_dict = {set_list[i]:set_list_indexing[i] for i in xrange(5)}
 for i in xrange(len(useful_info[1])):
 	useful_info[1][i] = set_list_dict[useful_info[0][i]]+useful_info[1][i]
+	print useful_info[1][i]
 idx= {useful_info[1][i] : i for i in xrange(len(useful_info[1]))}
 print idx
 # Delete Unnecessary data
@@ -45,19 +46,13 @@ companies_for_removal =[]
 for company in data:
 	try:
 		score =0
-		print "came here1"
-		score+=1 if ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['cTotal assets']] ) >0 else 0 #ROA
-		print "came here2"
-		score+=1 if ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['cTotal assets']] ) > ( (company[idx['pTotal income']]-company[idx['pTotal expenses']]-company[idx['pExtra-ordinary income']]+company[idx['pExtra-ordinary expenses']])/company[idx['pTotal assets']] )  else 0 #D_ROA
-		print "came here3"
-		score+=1 if ( company[idx['cNet cash flow from operating activities']]/company[idx['cTotal assets']] ) >0 else 0 #CFO
-		print "came here4"
-		score+=1 if  ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['cTotal assets']] ) > ( company[idx['cNet cash flow from operating activities']]/company[idx['cTotal assets']] )  else 0 #ACCRUAL
-		print "came here5"
+		score+=1 if ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['pTotal assets']] ) >0 else 0 #ROA
+		score+=1 if ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['cTotal assets']] ) > ( (company[idx['pTotal income']]-company[idx['pTotal expenses']]-company[idx['pExtra-ordinary income']]+company[idx['pExtra-ordinary expenses']])/company[idx['hTotal assets']] )  else 0 #D_ROA
+		score+=1 if ( company[idx['cNet cash flow from operating activities']]/company[idx['pTotal assets']] ) >0 else 0 #CFO
+		score+=1 if  ( (company[idx['cTotal income']]-company[idx['cTotal expenses']]-company[idx['cExtra-ordinary income']]+company[idx['cExtra-ordinary expenses']])/company[idx['pTotal assets']] ) > ( company[idx['cNet cash flow from operating activities']]/company[idx['pTotal assets']] )  else 0 #ACCRUAL
 		score+=1 if ( company[idx['cCurrent assets']]/company[idx['cCurrent liabilities']] ) >  ( company[idx['pCurrent assets']]/company[idx['pCurrent liabilities']] ) else 0 #D_LIQUID
-		print "came here6"
 		score+=1 if ( company[idx['cTotal term liabilities']]/company[idx['cTotal assets']] ) < ( company[idx['pTotal term liabilities']]/company[idx['pTotal assets']] ) else 0 #D_LEVER
-		print "came here7"
+		var = 1/company[idx['cAdjusted Closing Price ']]*company[idx['fAdjusted Closing Price ']]
 		try:#D_MARGIN
 			score+=1 if ( (company[idx['cNet sales']]-company[idx['cCost of goods sold']])/company[idx['cNet sales']] ) >( (company[idx['pNet sales']]-company[idx['pCost of goods sold']])/company[idx['pNet sales']] ) else 0
 		except:
